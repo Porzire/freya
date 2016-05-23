@@ -8,7 +8,7 @@ endif
 
 let colors_name = "freya"
 
-hi Normal ctermbg=0 ctermfg=7 cterm=none guibg=#2a2a2a guifg=#dcdccc gui=none
+hi Normal ctermbg=0 ctermfg=7 cterm=none guibg=#262626 guifg=#dcdccc gui=none
 
 hi Cursor guibg=fg guifg=bg gui=none
 hi CursorColumn guibg=#3f3f3f gui=none
@@ -22,7 +22,7 @@ hi ErrorMsg guibg=bg guifg=#f07070 gui=bold
 hi FoldColumn ctermbg=bg guibg=bg guifg=#c2b680 gui=none
 hi Folded guibg=#101010 guifg=#c2b680 gui=none
 hi IncSearch guibg=#866a4f guifg=fg gui=none
-hi LineNr guibg=bg guifg=#9f8f80 gui=none
+hi LineNr guibg=bg guifg=#666666 gui=none
 hi ModeMsg guibg=bg guifg=fg gui=bold
 hi MoreMsg guibg=bg guifg=#dabfa5 gui=bold
 hi NonText ctermfg=8 guibg=bg guifg=#9f8f80 gui=bold
