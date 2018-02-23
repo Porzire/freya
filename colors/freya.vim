@@ -1,12 +1,26 @@
-set background=dark
-
 hi clear
-
 if exists("syntax_on")
   syntax reset
 endif
 
+set background=dark
 let colors_name = "freya"
+
+let s:is_gui = has('gui_running')
+
+if !exists('g:freya_highlight_comment')
+  let g:freya_highlight_comment = 0
+endif
+
+if s:is_gui
+  hi Comment  cterm=NONE    ctermfg=244  ctermbg=bg  gui=NONE  guifg=#808080 guibg=bg
+else
+  if g:freya_highlight_comment
+    hi Comment ctermbg=NONE ctermfg=59 guibg=NONE guifg=#515F6A cterm=italic gui=italic
+  else
+    hi Comment ctermbg=NONE ctermfg=59 guibg=NONE guifg=#515F6A cterm=NONE   gui=NONE
+  endif
+endif
 
 hi Normal ctermbg=0 ctermfg=7 cterm=none guibg=#262626 guifg=#dcdccc gui=none
 
@@ -57,7 +71,6 @@ hi WarningMsg guibg=bg guifg=#f07070 gui=none
 hi WildMenu guibg=#c0aa94 guifg=bg gui=bold
 
 hi ColorColumn ctermbg=lightgrey guibg=#393939
-hi Comment	cterm=none	ctermfg=244	ctermbg=bg	gui=none	guifg=#808080	guibg=bg
 hi Constant guibg=bg guifg=#afe091 gui=none
 hi Error guibg=bg guifg=#f07070 gui=none
 hi Identifier guibg=bg guifg=#dabfa5 gui=none
