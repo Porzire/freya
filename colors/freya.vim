@@ -22,25 +22,25 @@ else
   endif
 endif
 
-hi Normal ctermbg=0 ctermfg=7 cterm=none guibg=#262626 guifg=#dcdccc gui=none
+hi Normal ctermbg=236 ctermfg=7 cterm=none guibg=#262626 guifg=#dcdccc gui=none " Background
 
-hi Cursor guibg=fg guifg=bg gui=none
-hi CursorColumn guibg=#3f3f3f gui=none
-hi CursorLine guibg=#3f3f3f gui=none
-hi DiffAdd guibg=#008b00 guifg=fg gui=none
-hi DiffChange guibg=#00008b guifg=fg gui=none
-hi DiffDelete guibg=#8b0000 guifg=fg gui=none
-hi DiffText guibg=#0000cd guifg=fg gui=bold
-hi Directory guibg=bg guifg=#d4b064 gui=none
-hi ErrorMsg guibg=bg guifg=#f07070 gui=bold
-hi FoldColumn ctermbg=bg guibg=bg guifg=#c2b680 gui=none
+hi Cursor                  guibg=fg guifg=bg gui=none
+hi CursorColumn            guibg=#3f3f3f gui=none
+hi CursorLine  ctermbg=235 guibg=#3f3f3f gui=none
+hi DiffAdd                 guibg=#008b00 guifg=fg gui=none
+hi DiffChange              guibg=#00008b guifg=fg gui=none
+hi DiffDelete              guibg=#8b0000 guifg=fg gui=none
+hi DiffText                guibg=#0000cd guifg=fg gui=bold
+hi Directory   ctermfg=221 guibg=bg guifg=#d4b064 gui=none
+hi ErrorMsg                guibg=bg guifg=#f07070 gui=bold
+hi FoldColumn  ctermbg=bg  guibg=bg guifg=#c2b680 gui=none
 hi Folded guibg=#101010 guifg=#c2b680 gui=none
 hi IncSearch guibg=#866a4f guifg=fg gui=none
-hi LineNr guibg=bg guifg=#666666 gui=none
+hi LineNr ctermfg=240 guibg=bg guifg=#666666 gui=none
 hi ModeMsg guibg=bg guifg=fg gui=bold
 hi MoreMsg guibg=bg guifg=#dabfa5 gui=bold
 hi NonText ctermfg=8 guibg=bg guifg=#9f8f80 gui=bold
-hi Pmenu guibg=#a78869 guifg=#000000 gui=none
+hi Pmenu  guibg=#a78869 guifg=#000000 gui=none
 hi PmenuSbar guibg=#B99F86 guifg=fg gui=none
 hi PmenuSel guibg=#c0aa94 guifg=bg gui=none
 hi PmenuThumb guibg=#f7f7f1 guifg=bg gui=none
@@ -60,7 +60,6 @@ hi TabLine guibg=#564d43 guifg=#f7f7f1 gui=underline
 hi TabLineFill guibg=#564d43 guifg=#f7f7f1 gui=underline
 hi TabLineSel guibg=bg guifg=#f7f7f1 gui=bold
 hi Title ctermbg=0 ctermfg=15 guifg=#f7f7f1 gui=bold
-hi VertSplit ctermbg=7 ctermfg=0 guibg=#564d43 guifg=#f7f7f1 gui=none
 if version >= 700
   hi Visual ctermbg=7 ctermfg=0 guibg=#5f5f5f gui=none
 else
@@ -69,20 +68,22 @@ endif
 hi VisualNOS guibg=bg guifg=#c0aa94 gui=bold,underline
 hi WarningMsg guibg=bg guifg=#f07070 gui=none
 hi WildMenu guibg=#c0aa94 guifg=bg gui=bold
+" Grid
+hi VertSplit    ctermbg=7 ctermfg=235 guibg=#564d43 guifg=#f7f7f1 gui=none
 
-hi ColorColumn ctermbg=lightgrey guibg=#393939
-hi Constant guibg=bg guifg=#afe091 gui=none
-hi Error guibg=bg guifg=#f07070 gui=none
-hi Identifier guibg=bg guifg=#dabfa5 gui=none
-hi Ignore guibg=bg guifg=bg gui=none
-hi lCursor guibg=#c0aa94 guifg=bg gui=none
-hi MatchParen guibg=#008b8b gui=none
-hi PreProc guibg=bg guifg=#c2aed0 gui=none
-hi Special guibg=bg guifg=#d4b064 gui=none
-hi Statement guibg=bg guifg=#e0af91 gui=bold
-hi Todo guibg=#aed0ae guifg=bg gui=none
-hi Type guibg=bg guifg=#dabfa5 gui=bold
-hi Underlined guibg=bg guifg=#d4b064 gui=underline
+hi ColorColumn  ctermbg=239 guibg=#393939
+hi Constant     ctermfg=157 guibg=bg guifg=#afe091 gui=none
+hi Error                    guibg=bg guifg=#f07070 gui=none
+hi Identifier   ctermfg=223 guibg=bg guifg=#dabfa5 gui=none  " function keywords (e.g. max)
+hi Ignore                   guibg=bg guifg=bg gui=none
+hi lCursor                  guibg=#c0aa94 guifg=bg gui=none
+hi MatchParen               guibg=#008b8b gui=none
+hi PreProc      ctermfg=182 guibg=bg guifg=#c2aed0 gui=none  " Special constants (e.g. None)
+hi Special                  guibg=bg guifg=#d4b064 gui=none
+hi Statement    ctermfg=215 guibg=bg guifg=#e0af91 gui=bold  " statement keywords (e.g. def)
+hi Todo                     guibg=#aed0ae guifg=bg gui=none
+hi Type         ctermfg=223 guibg=bg guifg=#dabfa5 gui=bold  " type/class name
+hi Underlined               guibg=bg guifg=#d4b064 gui=underline
 
 hi htmlBold ctermbg=0 ctermfg=15 guibg=bg guifg=fg gui=bold
 hi htmlItalic ctermbg=0 ctermfg=15 guibg=bg guifg=fg gui=italic
