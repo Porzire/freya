@@ -26,12 +26,12 @@ hi Normal ctermbg=236 ctermfg=7 cterm=none guibg=#262626 guifg=#dcdccc gui=none 
 
 hi Cursor                  guibg=fg guifg=bg gui=none
 hi CursorColumn            guibg=#3f3f3f gui=none
-hi CursorLine  ctermbg=235 guibg=#3f3f3f gui=none
+hi CursorLine  ctermbg=235 cterm=none guibg=#3f3f3f gui=none
 hi DiffAdd                 guibg=#008b00 guifg=fg gui=none
 hi DiffChange              guibg=#00008b guifg=fg gui=none
 hi DiffDelete              guibg=#8b0000 guifg=fg gui=none
 hi DiffText                guibg=#0000cd guifg=fg gui=bold
-hi Directory   ctermfg=221 guibg=bg guifg=#d4b064 gui=none
+hi Directory   ctermfg=222 guibg=bg guifg=#d4b064 gui=none
 hi ErrorMsg                guibg=bg guifg=#f07070 gui=bold
 hi FoldColumn  ctermbg=bg  guibg=bg guifg=#c2b680 gui=none
 hi Folded guibg=#101010 guifg=#c2b680 gui=none
@@ -69,7 +69,7 @@ hi VisualNOS guibg=bg guifg=#c0aa94 gui=bold,underline
 hi WarningMsg guibg=bg guifg=#f07070 gui=none
 hi WildMenu guibg=#c0aa94 guifg=bg gui=bold
 " Grid
-hi VertSplit    ctermbg=7 ctermfg=235 guibg=#564d43 guifg=#f7f7f1 gui=none
+hi VertSplit    ctermbg=7 ctermfg=234 guibg=#564d43 guifg=#f7f7f1 gui=none
 
 hi ColorColumn  ctermbg=239 guibg=#393939
 hi Constant     ctermfg=157 guibg=bg guifg=#afe091 gui=none
@@ -80,7 +80,7 @@ hi lCursor                  guibg=#c0aa94 guifg=bg gui=none
 hi MatchParen               guibg=#008b8b gui=none
 hi PreProc      ctermfg=182 guibg=bg guifg=#c2aed0 gui=none  " Special constants (e.g. None)
 hi Special                  guibg=bg guifg=#d4b064 gui=none
-hi Statement    ctermfg=215 guibg=bg guifg=#e0af91 gui=bold  " statement keywords (e.g. def)
+hi Statement    ctermfg=216 guibg=bg guifg=#e0af91 gui=bold  " statement keywords (e.g. def)
 hi Todo                     guibg=#aed0ae guifg=bg gui=none
 hi Type         ctermfg=223 guibg=bg guifg=#dabfa5 gui=bold  " type/class name
 hi Underlined               guibg=bg guifg=#d4b064 gui=underline
