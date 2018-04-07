@@ -16,9 +16,9 @@ if s:is_gui
   hi Comment  cterm=NONE    ctermfg=244  ctermbg=bg  gui=NONE  guifg=#808080 guibg=bg
 else
   if g:freya_highlight_comment
-    hi Comment ctermbg=NONE ctermfg=59 guibg=NONE guifg=#515F6A cterm=italic gui=italic
+    hi Comment ctermbg=NONE ctermfg=241 guibg=NONE guifg=#515F6A cterm=italic gui=italic
   else
-    hi Comment ctermbg=NONE ctermfg=59 guibg=NONE guifg=#515F6A cterm=NONE   gui=NONE
+    hi Comment ctermbg=NONE ctermfg=241 guibg=NONE guifg=#515F6A cterm=NONE   gui=NONE
   endif
 endif
 
@@ -36,7 +36,7 @@ hi ErrorMsg                guibg=bg guifg=#f07070 gui=bold
 hi FoldColumn  ctermbg=bg  guibg=bg guifg=#c2b680 gui=none
 hi Folded guibg=#101010 guifg=#c2b680 gui=none
 hi IncSearch guibg=#866a4f guifg=fg gui=none
-hi LineNr ctermfg=240 guibg=bg guifg=#666666 gui=none
+hi LineNr ctermfg=239 guibg=bg guifg=#666666 gui=none
 hi ModeMsg guibg=bg guifg=fg gui=bold
 hi MoreMsg guibg=bg guifg=#dabfa5 gui=bold
 hi NonText ctermfg=8 guibg=bg guifg=#9f8f80 gui=bold
@@ -69,7 +69,7 @@ hi VisualNOS guibg=bg guifg=#c0aa94 gui=bold,underline
 hi WarningMsg guibg=bg guifg=#f07070 gui=none
 hi WildMenu guibg=#c0aa94 guifg=bg gui=bold
 " Grid
-hi VertSplit    ctermbg=7 ctermfg=234 guibg=#564d43 guifg=#f7f7f1 gui=none
+hi VertSplit    ctermfg=235 guibg=#564d43 guifg=#f7f7f1 gui=none
 
 hi ColorColumn  ctermbg=239 guibg=#393939
 hi Constant     ctermfg=157 guibg=bg guifg=#afe091 gui=none
